@@ -20,7 +20,7 @@
 
 ---
 
-## 1. What is 5G Scheduling? (Plain English)
+## 1. What is 5G Scheduling? 
 
 Imagine a single Wi-Fi router at home shared by your entire family. Everyone wants to stream, browse, and video call at the same time, but the router can only send data to **one device at a time** (in very short bursts). It has to constantly decide: *"Who gets the channel right now?"*
 
@@ -34,7 +34,7 @@ This is fundamentally an **optimisation problem**, and Linear Programming (LP) i
 
 ---
 
-## 2. Key Terms You Need to Know
+## 2. Key Terms
 
 | Term | What it means |
 |------|---------------|
@@ -96,31 +96,6 @@ The goal of scheduling is to pick the **right operating point** on the boundary 
 
 ---
 
-## 4. What is Linear Programming?
-
-**Linear Programming (LP)** is a method to find the best value of a linear objective function subject to linear constraints.
-
-### General form
-
-```
-minimize    c^T x
-subject to  A x  ≤  b        (inequality constraints)
-            A_eq x = b_eq    (equality constraints)
-            lb ≤ x ≤ ub      (variable bounds)
-```
-
-Where:
-- `x` is the **vector of decision variables** (what we choose)
-- `c` is the **cost vector** (coefficients of the objective)
-- `A`, `b` define the **constraint boundaries**
-
-> **Intuition:** LP is like trying to maximise the area of a rectangle while keeping its perimeter below a fixed limit. The constraints form a polygon (the feasible region), and the optimal solution always sits at one of its corners.
-
-### Why LP for scheduling?
-
-The scheduling problem asks: *"What fraction of TTIs should each UE get?"* — these fractions are continuous variables between 0 and 1, the objective (total throughput or utility) is a function of these fractions, and the constraints (fractions must sum to 1, rates are bounded) are all linear. LP is the natural fit.
-
----
 
 ## 5. Building the LP Step by Step
 
