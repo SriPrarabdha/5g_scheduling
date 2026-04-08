@@ -5,18 +5,15 @@
 
 ## Table of Contents
 
-1. [What is 5G Scheduling? (Plain English)](#1-what-is-5g-scheduling-plain-english)
-2. [Key Terms You Need to Know](#2-key-terms-you-need-to-know)
+1. [What is 5G Scheduling? (#1-what-is-5g-scheduling)
+2. [Key Terms](#2-key-terms)
 3. [The Core Idea: Sharing Time Slots](#3-the-core-idea-sharing-time-slots)
-4. [What is Linear Programming?](#4-what-is-linear-programming)
 5. [Building the LP Step by Step](#5-building-the-lp-step-by-step)
 6. [Problem Type 1 — Max Sum Throughput](#6-problem-type-1--max-sum-throughput)
 7. [Problem Type 2 — Max Weighted Throughput](#7-problem-type-2--max-weighted-throughput)
 8. [Problem Type 3 — Proportional Fair (PF)](#8-problem-type-3--proportional-fair-pf)
 9. [Problem Type 4 — PF with Rate Guarantee (GBR)](#9-problem-type-4--pf-with-rate-guarantee-gbr)
 10. [Comparing All Four Problem Types](#10-comparing-all-four-problem-types)
-11. [Python Implementation](#11-python-implementation)
-12. [Summary Cheatsheet](#12-summary-cheatsheet)
 
 ---
 
