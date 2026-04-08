@@ -1,0 +1,33 @@
+
+══════════════════════════════════════════════════════════════
+  5G SCHEDULING LP SOLVER
+══════════════════════════════════════════════════════════════
+  Mode            : mw
+  UEs (N)         : 3
+  TTIs (K)        : 1000
+  EWMA alpha      : 0.0005  (window ≈ 2000 TTIs)
+  Channel model   : exponential
+  Random seed     : 42
+  UE weights      : [1.0, 2.0, 5.0]
+  Output dir      : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/mw
+
+  Average rates per UE : [120.  75.  30.] Mbps
+
+  [Config] Weights : [1. 2. 5.]
+
+════════════════════════════════════════════════════════
+  Problem Type 2 — Max Weighted Throughput  [U(θ) = w·θ]
+════════════════════════════════════════════════════════
+  UE       Avg Rate   Throughput   Share         RG   Met
+  ────────────────────────────────────────────────────────
+  UE 0    120.0 Mbps      61.92 Mbps    47.2%          —      
+  UE 1     75.0 Mbps      49.63 Mbps    37.9%          —      
+  UE 2     30.0 Mbps      19.51 Mbps    14.9%          —      
+  ────────────────────────────────────────────────────────
+                    Total     131.06 Mbps
+      Jain fairness index     0.8574  (1.0 = perfectly fair)
+[SAVED] Raw data   → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/mw/data_20260408_170052.npz
+[SAVED] Plot       → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/mw/plot_20260408_170052.png
+
+[DONE] All outputs in : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/mw
+

@@ -1,0 +1,34 @@
+
+══════════════════════════════════════════════════════════════
+  5G SCHEDULING LP SOLVER
+══════════════════════════════════════════════════════════════
+  Mode            : rg
+  UEs (N)         : 3
+  TTIs (K)        : 1000
+  EWMA alpha      : 0.0005  (window ≈ 2000 TTIs)
+  Channel model   : exponential
+  Random seed     : 42
+  Rate guarantees : [60.0, 40.0, 0.0] Mbps
+  Output dir      : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/rg
+
+  Average rates per UE : [120.  75.  30.] Mbps
+
+  [Config] Rate Guarantees : [60. 40.  0.] Mbps
+  [Config] PF weights      : [0.00857 0.01288 0.03323]
+
+════════════════════════════════════════════════════════
+  Problem Type 4 — PF with Rate Guarantee (GBR)
+════════════════════════════════════════════════════════
+  UE       Avg Rate   Throughput   Share         RG   Met
+  ────────────────────────────────────────────────────────
+  UE 0    120.0 Mbps      71.19 Mbps    52.3%    60 Mbps     ✓
+  UE 1     75.0 Mbps      46.43 Mbps    34.1%    40 Mbps     ✓
+  UE 2     30.0 Mbps      18.63 Mbps    13.7%          —      
+  ────────────────────────────────────────────────────────
+                    Total     136.25 Mbps
+      Jain fairness index     0.8174  (1.0 = perfectly fair)
+[SAVED] Raw data   → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/rg/data_20260408_170109.npz
+[SAVED] Plot       → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/rg/plot_20260408_170109.png
+
+[DONE] All outputs in : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/rg
+

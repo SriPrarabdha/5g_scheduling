@@ -1,0 +1,77 @@
+
+══════════════════════════════════════════════════════════════
+  5G SCHEDULING LP SOLVER
+══════════════════════════════════════════════════════════════
+  Mode            : all
+  UEs (N)         : 5
+  TTIs (K)        : 1000
+  EWMA alpha      : 0.0005  (window ≈ 2000 TTIs)
+  Channel model   : exponential
+  Random seed     : 42
+  Output dir      : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all
+
+  Average rates per UE : [120.   97.5  75.   52.5  30. ] Mbps
+
+════════════════════════════════════════════════════════
+  Problem Type 1 — Max Sum Throughput  [U(θ) = θ]
+════════════════════════════════════════════════════════
+  UE       Avg Rate   Throughput   Share         RG   Met
+  ────────────────────────────────────────────────────────
+  UE 0    120.0 Mbps      79.34 Mbps    42.5%          —      
+  UE 1     97.5 Mbps      58.91 Mbps    31.6%          —      
+  UE 2     75.0 Mbps      32.90 Mbps    17.6%          —      
+  UE 3     52.5 Mbps      12.96 Mbps     6.9%          —      
+  UE 4     30.0 Mbps       2.57 Mbps     1.4%          —      
+  ────────────────────────────────────────────────────────
+                    Total     186.69 Mbps
+      Jain fairness index     0.6324  (1.0 = perfectly fair)
+[SAVED] Raw data   → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all/data_20260408_170150.npz
+
+  [Config] Weights : [5. 4. 3. 2. 1.]
+
+════════════════════════════════════════════════════════
+  Problem Type 2 — Max Weighted Throughput  [U(θ) = w·θ]
+════════════════════════════════════════════════════════
+  UE       Avg Rate   Throughput   Share         RG   Met
+  ────────────────────────────────────────────────────────
+  UE 0    120.0 Mbps      92.71 Mbps    51.0%          —      
+  UE 1     97.5 Mbps      59.89 Mbps    32.9%          —      
+  UE 2     75.0 Mbps      24.93 Mbps    13.7%          —      
+  UE 3     52.5 Mbps       4.23 Mbps     2.3%          —      
+  UE 4     30.0 Mbps       0.00 Mbps     0.0%          —      
+  ────────────────────────────────────────────────────────
+                    Total     181.75 Mbps
+      Jain fairness index     0.5153  (1.0 = perfectly fair)
+[SAVED] Raw data   → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all/data_20260408_170150.npz
+
+  [Config] EWMA init (avg rates) : [116.7  100.92  75.24  50.46  29.3 ] Mbps
+  [Config] PF weights (1/θ̄)      : [0.00857 0.00991 0.01329 0.01982 0.03412]
+
+════════════════════════════════════════════════════════
+  Problem Type 3 — Proportional Fair  [U(θ) = log(θ)]
+════════════════════════════════════════════════════════
+  UE       Avg Rate   Throughput   Share         RG   Met
+  ────────────────────────────────────────────────────────
+  UE 0    120.0 Mbps      53.19 Mbps    31.7%          —      
+  UE 1     97.5 Mbps      43.50 Mbps    26.0%          —      
+  UE 2     75.0 Mbps      33.17 Mbps    19.8%          —      
+  UE 3     52.5 Mbps      23.86 Mbps    14.2%          —      
+  UE 4     30.0 Mbps      13.88 Mbps     8.3%          —      
+  ────────────────────────────────────────────────────────
+                    Total     167.61 Mbps
+      Jain fairness index     0.8533  (1.0 = perfectly fair)
+[SAVED] Raw data   → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all/data_20260408_170150.npz
+
+══════════════════════════════════════════════════════════════
+  COMPARISON SUMMARY
+══════════════════════════════════════════════════════════════
+  Scheduler      Total (Mbps)   Jain Index     Feasible
+  ──────────────────────────────────────────────────────
+  MS                   186.69       0.6324          Yes
+  MWT                  181.75       0.5153          Yes
+  PF                   167.61       0.8533          Yes
+  ──────────────────────────────────────────────────────
+[SAVED] Plot       → /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all/comparison_20260408_170150.png
+
+[DONE] All outputs in : /home/prarabdha-srivastava/Desktop/iisc/mt_project/5g_scheduling/results/all
+

@@ -426,7 +426,7 @@ Each point on the curved boundary is achievable by some scheduling policy. The L
 
 ---
 
-## 11. Python Implementation
+<!-- ## 11. Python Implementation
 
 ```python
 import numpy as np
@@ -602,9 +602,9 @@ Problem Type 4: PF with Rate Guarantee
   UE 0 guarantee 60.0 Mbps: ✓
 ```
 
----
+--- -->
 
-## 12. Summary Cheatsheet
+## 12. Summary
 
 ### The four LP variants at a glance
 
@@ -654,5 +654,3 @@ TYPE 4 — PF with Rate Guarantee
 | `θ[i] ≥ RG[i]` | Rate guarantee constraint |
 
 ---
-
-*This document is self-contained. The four LP variants above cover the complete scheduling problem as taught in 5G networking courses, from the simplest (max sum) to the most practical (PF with rate guarantees for network slicing).*
